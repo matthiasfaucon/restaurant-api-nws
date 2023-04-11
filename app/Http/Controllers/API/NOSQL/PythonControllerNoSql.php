@@ -45,7 +45,7 @@ class PythonControllerNoSql extends Controller
 {
     public function getDatas()
     {
-        shell_exec('python ../scrapper2.py');
+        shell_exec('python ../scrapper-datas.py');
     }
 
     public function runScript()

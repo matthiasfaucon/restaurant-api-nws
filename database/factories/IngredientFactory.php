@@ -3,7 +3,6 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Ingredient>
@@ -18,8 +17,8 @@ class IngredientFactory extends Factory
     public function definition(): array
     {
         return [
-            'id' => '',
-            'nom' => ''
+            'nom' => fake()->jobTitle(),
+            'created_at' => now()
         ];
     }
 }

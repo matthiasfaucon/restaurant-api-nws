@@ -181,6 +181,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Jenssegers\Mongodb\MongodbServiceProvider::class,
+        // Darkaonline\L5Swagger\L5SwaggerServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -195,6 +197,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+    ],
+
+    'middleware' => [
+        // Darkaonline\L5Swagger\Http\Middleware\SwaggerMiddleware::class,
     ],
 
     /*
